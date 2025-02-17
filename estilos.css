@@ -1,0 +1,212 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4c4; /* Color crema similar al afiche */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #800000; /* Color marrón oscuro del afiche */
+    color: white;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #b22222; /* Rojo profundo */
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  
+  .container {
+    background-color: #fff8dc; /* Blanco cremoso */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-custom {
+    background-color: #ff8c00; /* Naranja vivo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-custom:hover {
+    background-color: #ffa500;
+  }
+  
+  .list-group-item {
+    background-color: #ffebcd; /* Beige claro */
+    color: #333;
+    border: 1px solid #dcdcdc;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .list-group-item input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  
+  h5 {
+    font-size: 1.2rem;
+    color: #b22222;
+    font-weight: bold;
+  }
+  
+  .receipt {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .receipt h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .receipt-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .receipt-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #b22222;
+  }
+/* styles.css */
+
+.plato {
+    text-align: center;
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list-group-item:hover {
+    background-color: #ffe4b5; /* Cambio de color al pasar el mouse */
+  }
+  
+  .list-group-item input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  .list-group-item.selected {
+    background-color: #add8e6 !important; /* Celeste para los platos seleccionados */
+  }
+/* styles.css */
+
+/* Contenedor para los controles de cantidad */
+.cantidad-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .cantidad-control button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-agregar {
+    background-color: #32cd32; /* Verde */
+    color: white;
+  }
+  
+  .btn-agregar:hover {
+    background-color: #228b22;
+  }
+  
+  .btn-restar {
+    background-color: #dc143c; /* Rojo */
+    color: white;
+  }
+  
+  .btn-restar:hover {
+    background-color: #a52a2a;
+  }
+  
+/* Contenedor para los controles de cantidad */
+.cantidad-control {
+  display: flex;
+  justify-content: center; /* Centrar botones */
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.cantidad-control button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-agregar {
+  background-color: #32cd32; /* Verde */
+  color: white;
+}
+
+.btn-agregar:hover {
+  background-color: #228b22;
+}
+
+.btn-restar {
+  background-color: #dc143c; /* Rojo */
+  color: white;
+}
+
+.btn-restar:hover {
+  background-color: #a52a2a;
+}
+
+/* Asegurar 5 platos por fila */
+#lista-platos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.plato {
+  flex: 1 0 18%; /* Tamaño aproximado para 5 platos por fila con espacio */
+  max-width: 18%;
+}  
